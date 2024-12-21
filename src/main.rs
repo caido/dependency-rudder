@@ -1,9 +1,9 @@
 use std::error::Error;
+use std::io;
+
 use clap::{App, AppSettings, Arg, SubCommand};
-use log::debug;
 use rudderanalytics::client::RudderAnalytics;
 use rudderanalytics::message::Message;
-use std::io;
 
 fn main() -> Result<(), Box<dyn Error>> {
     env_logger::init();
@@ -38,10 +38,6 @@ fn main() -> Result<(), Box<dyn Error>> {
 
     let write_key = matches.value_of("write-key").unwrap().to_owned();
     let data_plane_url = matches.value_of("data-plane-url").unwrap().to_owned();
-
-    debug!("Supplied CLI args:-");
-    debug!("write-key: {}", write_key);
-    debug!("data-plane-url: {}", data_plane_url);
 
     let rudderanalytics = RudderAnalytics::load(write_key, data_plane_url);
 

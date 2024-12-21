@@ -31,7 +31,7 @@ pub struct Identify {
     pub traits: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 
     /// Context associated with this message.
@@ -62,7 +62,7 @@ pub struct Track {
     pub properties: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 
     /// Context associated with this message.
@@ -93,7 +93,7 @@ pub struct Page {
     pub properties: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 
     /// Context associated with this message.
@@ -124,7 +124,7 @@ pub struct Screen {
     pub properties: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 
     /// Context associated with this message.
@@ -156,7 +156,7 @@ pub struct Group {
     pub traits: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 
     /// Context associated with this message.
@@ -184,7 +184,7 @@ pub struct Alias {
     pub traits: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 
     /// Context associated with this message.
@@ -211,7 +211,7 @@ pub struct Batch {
     pub integrations: Option<Value>,
 
     /// The timestamp associated with this message.
-    #[serde(rename="originalTimestamp", skip_serializing_if = "Option::is_none")]
+    #[serde(rename = "originalTimestamp", skip_serializing_if = "Option::is_none")]
     pub original_timestamp: Option<DateTime<Utc>>,
 }
 
